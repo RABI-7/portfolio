@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabi Baskar Praburajan | Full Stack Developer &amp; CSE Student</title>
+  <meta name="description" content="Portfolio of Rabi Baskar Praburajan, Full Stack Developer and Computer Science Engineering student specializing in scalable web systems, AI, and cybersecurity.">
+  <meta name="keywords" content="Rabi Baskar Praburajan, Rabi, Full Stack Developer, Computer Science Engineer, AI, Machine Learning, Cybersecurity, Web Development, Portfolio">
+  <meta name="author" content="Rabi Baskar Praburajan">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23e62b3a'>R</text></svg>">
+
+  <!-- Google Fonts: Anton (Display), Caveat (Script), Plus Jakarta Sans (Clean Modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <!-- Fixed Scroll-Driven Animation Canvas (Background Visual) -->
+  <canvas id="animationCanvas" aria-label="Interactive scroll animation backdrop"></canvas>
+
+  <!-- Global Subtle Ambient Glows -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- Site Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-role">FULL STACK DEVELOPER</span>
+        <span class="brand-sub">CSE STUDENT / AI ENTHUSIAST</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about-process" class="nav-link">Process</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="status-pill" id="availableBtn">
+        <span class="status-dot"></span>
+        <span class="status-text">AVAILABLE FOR PROJECTS</span>
+        <span class="status-plus">+</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Content Overlay -->
+  <main class="page-content" id="pageContent">
+
+    <!-- HERO SECTION -->
+    <section class="section section-hero" id="hero">
+      <div class="hero-container">
+        <!-- Hero Left Column -->
+        <div class="hero-col hero-left">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-accent">PORTFOLIO</span>
+            <span class="eyebrow-dot">•</span>
+            <span class="eyebrow-year">2026</span>
+          </div>
+          <div class="script-badge">
+            <span class="script-text">Hello, I'm</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-name">RABI</span>
+            <span class="title-role">FULL STACK DEVELOPER</span>
+          </h1>
+          <p class="hero-bio">
+            Computer Science Engineering student &amp; Full Stack Developer passionate about architecting scalable web applications, exploring artificial intelligence, and building secure digital systems. From intuitive frontends to robust backends and cybersecurity, I turn complex problems into elegant code.
+          </p>
+          <div class="location-badge">
+            <svg class="pin-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>BASED IN INDIA</span>
+          </div>
+        </div>
+
+        <!-- Center spacer where the animated subject is prominently featured -->
+        <div class="hero-col hero-center-focus" aria-hidden="true"></div>
+
+        <!-- Hero Right Column -->
+        <div class="hero-col hero-right">
+          <div class="vision-card">
+            <div class="vision-circle-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </div>
+            <p class="vision-text">Architecting intelligent, scalable &amp; secure digital solutions.</p>
+          </div>
+
+          <ul class="hero-pillars">
+            <li class="pillar-item">
+              <span class="pillar-plus">+</span>
+              <span class="pillar-text">Full-Stack Web Development</span>
+            </li>
+            <li class="pillar-item">
+              <span class="pillar-plus">+</span>
+              <span class="pillar-text">Artificial Intelligence &amp; ML</span>
+            </li>
+            <li class="pillar-item">
+              <span class="pillar-plus">+</span>
+              <span class="pillar-text">Cybersecurity &amp; Systems</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#projects" class="hero-scroll-cue" aria-label="Scroll to selected projects">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-label">Scroll to explore</span>
+      </a>
+    </section>
+
+    <!-- SELECTED PROJECTS SECTION -->
+    <section class="section section-projects" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">SELECTED PROJECTS</h2>
+        <span class="section-dash" aria-hidden="true"></span>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 01: SAFEGATE -->
+        <article class="project-card" id="project-safegate">
+          <div class="project-media">
+            <img src="assets/project-safegate.jpg" alt="SAFEGATE Society Management App Full Stack" loading="lazy">
+            <div class="project-overlay">
+              <span class="overlay-btn">View Project</span>
+            </div>
+          </div>
+          <div class="project-caption">
+            <div class="caption-text">
+              <h3 class="project-name">SAFEGATE</h3>
+              <p class="project-desc">Society Management App</p>
+              <span class="project-category">Full Stack &amp; Security</span>
+            </div>
+            <div class="project-action">
+              <span class="project-index">01</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02: Event Ticket Booking -->
+        <article class="project-card" id="project-tickets">
+          <div class="project-media">
+            <img src="assets/project-tickets.jpg" alt="Event Ticket Booking Web Application" loading="lazy">
+            <div class="project-overlay">
+              <span class="overlay-btn">View Project</span>
+            </div>
+          </div>
+          <div class="project-caption">
+            <div class="caption-text">
+              <h3 class="project-name">Event Ticket Booking</h3>
+              <p class="project-desc">Real-time Booking Platform</p>
+              <span class="project-category">Full Stack &amp; Cloud</span>
+            </div>
+            <div class="project-action">
+              <span class="project-index">02</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03: LOOPIN -->
+        <article class="project-card" id="project-loopin">
+          <div class="project-media">
+            <img src="assets/project-loopin.jpg" alt="LOOPIN Music Streaming Platform" loading="lazy">
+            <div class="project-overlay">
+              <span class="overlay-btn">View Project</span>
+            </div>
+          </div>
+          <div class="project-caption">
+            <div class="caption-text">
+              <h3 class="project-name">LOOPIN</h3>
+              <p class="project-desc">Music Streaming Web App</p>
+              <span class="project-category">React &amp; Audio APIs</span>
+            </div>
+            <div class="project-action">
+              <span class="project-index">03</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 04: Website Landing Page -->
+        <article class="project-card" id="project-landing">
+          <div class="project-media">
+            <img src="assets/project-landing.jpg" alt="AI Health Platform Web Application" loading="lazy">
+            <div class="project-overlay">
+              <span class="overlay-btn">View Project</span>
+            </div>
+          </div>
+          <div class="project-caption">
+            <div class="caption-text">
+              <h3 class="project-name">AI Health Platform</h3>
+              <p class="project-desc">Predictive Health Dashboard</p>
+              <span class="project-category">AI Integration &amp; Web</span>
+            </div>
+            <div class="project-action">
+              <span class="project-index">04</span>
+              <span class="project-arrow">→</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3-COLUMN SPLIT: EDUCATION & SKILLS | WORK PROCESS | QUOTE -->
+    <section class="section section-split" id="about-process">
+      <div class="split-container">
+
+        <!-- Column 1: EDUCATION & SKILLS -->
+        <div class="split-column col-education-skills" id="skills">
+          <h2 class="col-main-title">EDUCATION &amp; SKILLS</h2>
+
+          <!-- Sub-section: Education -->
+          <div class="sub-block">
+            <h3 class="sub-label">EDUCATION</h3>
+
+            <div class="timeline-group">
+              <div class="timeline-row">
+                <span class="timeline-title">B.E. Computer Science &amp; Engineering</span>
+                <span class="timeline-year">2022-26</span>
+              </div>
+
+              <div class="timeline-row highlight">
+                <span class="timeline-title">Full Stack Web Development &amp; AI</span>
+                <span class="timeline-year">2024-25</span>
+              </div>
+              <p class="timeline-details">
+                Data Structures &amp; Algorithms | Web Architecture<br>
+                Machine Learning | Network Security &amp; Cryptography
+              </p>
+            </div>
+          </div>
+
+          <!-- Sub-section: Skills -->
+          <div class="sub-block">
+            <h3 class="sub-label">SKILLS</h3>
+
+            <div class="skills-cloud">
+              <span class="skill-tag">PYTHON</span>
+              <span class="skill-tag">JAVASCRIPT</span>
+              <span class="skill-tag">TYPESCRIPT</span>
+              <span class="skill-tag">REACT JS</span>
+              <span class="skill-tag">NODE.JS</span>
+              <span class="skill-tag">EXPRESS</span>
+              <span class="skill-tag">HTML5 &amp; CSS3</span>
+              <span class="skill-tag">REST APIS</span>
+              <span class="skill-tag">SQL &amp; POSTGRESQL</span>
+              <span class="skill-tag">MONGODB</span>
+              <span class="skill-tag">MACHINE LEARNING</span>
+              <span class="skill-tag">CYBERSECURITY</span>
+              <span class="skill-tag">DOCKER</span>
+              <span class="skill-tag">GIT &amp; GITHUB</span>
+              <span class="skill-tag">LINUX</span>
+              <span class="skill-tag">PROBLEM SOLVING</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: WORK PROCESS -->
+        <div class="split-column col-work-process">
+          <h2 class="col-main-title">WORK PROCESS</h2>
+
+          <div class="process-steps">
+            <!-- Step 1: Analyze -->
+            <div class="process-step">
+              <div class="step-icon-wrap">
+                <svg class="step-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m4.93 4.93 4.24 4.24"></path>
+                  <path d="m14.83 9.17 4.24-4.24"></path>
+                  <path d="m14.83 14.83 4.24 4.24"></path>
+                  <path d="m9.17 14.83-4.24 4.24"></path>
+                  <circle cx="12" cy="12" r="4"></circle>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h3 class="step-title">Analyze</h3>
+                <p class="step-sub">Requirement &amp; Logic Analysis</p>
+              </div>
+            </div>
+
+            <!-- Step 2: Architect -->
+            <div class="process-step">
+              <div class="step-icon-wrap">
+                <svg class="step-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                  <path d="M9 12h6"></path>
+                  <path d="M9 16h6"></path>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h3 class="step-title">Architect</h3>
+                <p class="step-sub">System Design &amp; Data Models</p>
+              </div>
+            </div>
+
+            <!-- Step 3: Develop -->
+            <div class="process-step">
+              <div class="step-icon-wrap">
+                <svg class="step-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h3 class="step-title">Develop</h3>
+                <p class="step-sub">Full Stack Implementation</p>
+              </div>
+            </div>
+
+            <!-- Step 4: Secure & Test -->
+            <div class="process-step">
+              <div class="step-icon-wrap">
+                <svg class="step-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h3 class="step-title">Secure &amp; Test</h3>
+                <p class="step-sub">Unit Tests &amp; Security Audits</p>
+              </div>
+            </div>
+
+            <!-- Step 5: Optimize -->
+            <div class="process-step">
+              <div class="step-icon-wrap">
+                <svg class="step-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="3" x2="6" y2="15"></line>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <line x1="18" y1="9" x2="18" y2="21"></line>
+                  <circle cx="18" cy="6" r="3"></circle>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h3 class="step-title">Optimize</h3>
+                <p class="step-sub">Performance Tuning &amp; Refactor</p>
+              </div>
+            </div>
+
+            <!-- Step 6: Deploy -->
+            <div class="process-step">
+              <div class="step-icon-wrap">
+                <svg class="step-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="step-content">
+                <h3 class="step-title">Deploy</h3>
+                <p class="step-sub">CI/CD &amp; Production Launch</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: QUOTE & INSPIRATION -->
+        <div class="split-column col-quote-cta">
+          <div class="quote-card">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote class="quote-text">
+              Good software is not just how it looks, but how it works, scales, and stays secure.
+            </blockquote>
+            <div class="quote-accent-bar" aria-hidden="true"></div>
+
+            <div class="signature-block">
+              <span class="signature-name">Rabi</span>
+            </div>
+
+            <div class="cta-message">
+              <p class="cta-line">LET'S BUILD</p>
+              <p class="cta-line">SOMETHING GREAT</p>
+              <p class="cta-line">TOGETHER.</p>
+            </div>
+
+            <div class="cta-sparkle" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION: LET'S WORK TOGETHER -->
+    <section class="section section-footer" id="contact">
+      <div class="footer-container">
+
+        <!-- Footer Left: Call to Action -->
+        <div class="footer-col col-cta">
+          <div class="cta-heading-wrap">
+            <h2 class="footer-heading">LET'S WORK TOGETHER</h2>
+            <span class="heading-star" aria-hidden="true">✦</span>
+          </div>
+          <p class="footer-desc">
+            I'm currently open for new opportunities, software engineering challenges, research collaborations, and freelance projects. Let's create something amazing that brings results.
+          </p>
+          <a href="mailto:rabibaskar04@gmail.com" class="btn-available" id="freelanceBtn">
+            <span class="circle-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+            <span class="btn-text">AVAILABLE FOR COLLABORATION</span>
+          </a>
+        </div>
+
+        <!-- Footer Middle: Social & Contact Links -->
+        <div class="footer-col col-links">
+          <ul class="contact-list">
+            <!-- Email -->
+            <li class="contact-item">
+              <a href="mailto:rabibaskar04@gmail.com" class="contact-link" aria-label="Email Rabi Baskar Praburajan">
+                <span class="icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </span>
+                <span class="contact-text">rabibaskar7@gmail.com</span>
+              </a>
+            </li>
+
+            <!-- GitHub -->
+            <li class="contact-item">
+              <a href="https://github.com/RABI-7" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile">
+                <span class="icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </span>
+                <span class="contact-text">github.com/RABI-7</span>
+              </a>
+            </li>
+
+            <!-- LinkedIn -->
+            <li class="contact-item">
+              <a href="https://www.linkedin.com/in/rabi-baskar" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">
+                <span class="icon-circle icon-in">
+                  <span class="in-text">in</span>
+                </span>
+                <span class="contact-text">linkedin.com/in/rabi-baskar</span>
+              </a>
+            </li>
+
+            <!-- Web / Portfolio -->
+            <li class="contact-item">
+              <a href="https://github.com/RABI-7/portfolio" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Portfolio repository">
+                <span class="icon-circle">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </span>
+                <span class="contact-text">github.com/RABI-7/portfolio</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Right: Laptop Mockup Showcase -->
+        <div class="footer-col col-mockup">
+          <div class="laptop-showcase">
+            <img src="assets/laptop-mockup.jpg" alt="Rabi Baskar Praburajan Full Stack Developer Portfolio Showcase on Laptop" loading="lazy">
+            <div class="laptop-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Sub-Footer -->
+      <div class="sub-footer">
+        <p class="copyright-text">© 2026 Rabi Baskar Praburajan. All Rights Reserved. Crafted with passion.</p>
+        <a href="#hero" class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
